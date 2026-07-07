@@ -127,6 +127,14 @@ Credentials can be set for the current session only, using the Python interface.
 
 Go to the [documentation](https://docs.openbb.co/platform/settings/user_settings/api_keys) for more details.
 
+## Provider defaults
+
+Command provider defaults and other parameter defaults are configured in `~/.openbb_platform/user_settings.json` under `defaults.commands`, using slash-style API route keys (for example, `"/economy/cpi"`).
+
+These defaults are applied at runtime and do not change values shown in generated FastAPI or Python docstrings. To limit which providers appear in your environment, install only the router and provider packages you need.
+
+See the [defaults documentation](https://docs.openbb.co/odp/python/settings/user_settings/defaults) for configuration details and examples.
+
 ## REST API
 
 The OpenBB Platform comes with a ready-to-use REST API built with FastAPI. Start the application using this command:
